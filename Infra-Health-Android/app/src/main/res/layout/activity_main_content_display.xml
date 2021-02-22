@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainContentDisplay"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical">
+
+       <TextView
+           android:text="Heart Beat Rate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/heartbeatRateLabel"
+           android:textSize="25sp"
+           />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp">
+
+           <TextView
+               android:text="90"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/heartBeatValue"
+               android:textSize="90dp"
+               android:textColor="@color/teal_200"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="beats per minute"
+               android:layout_marginLeft="8dp"/>
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Temperature"
+           android:textSize="25sp"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp">
+
+           <TextView
+               android:id="@+id/tempValue"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="90dp"
+               android:textColor="@color/teal_200"
+               android:text="26" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="degree fahrenheit"
+               android:layout_marginLeft="8dp"/>
+
+       </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Pressure"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bpValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="90dp"
+            android:textColor="@color/teal_200"
+            android:text="64" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mmHg"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_get_app_24"
+        android:background="@color/black"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:text="Update"
+        android:textColor="@color/white" />
+
+</LinearLayout>
